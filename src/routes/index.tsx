@@ -8,10 +8,10 @@ export const Route = createFileRoute("/")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "NOVA — Immersive Digital Experiences" },
-      { name: "description", content: "Enter NOVA: an immersive creative technology studio building digital worlds that move, respond and transform." },
-      { property: "og:title", content: "NOVA — Immersive Digital Experiences" },
-      { property: "og:description", content: "Digital experiences should be felt. Enter an interactive world by NOVA." },
+      { title: "Farooq Azam — Full-Stack Developer & AI Engineer" },
+      { name: "description", content: "Farooq Azam is a full-stack developer and AI engineer building end-to-end products across frontend, backend, MERN, Python, and applied machine learning." },
+      { property: "og:title", content: "Farooq Azam — Full-Stack Developer & AI Engineer" },
+      { property: "og:description", content: "Full-stack development and applied AI engineering across React, Node.js, Python, MERN, LLM, and RAG-based products." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
