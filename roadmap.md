@@ -1,7 +1,8 @@
 # Roadmap
 
-- [ ] Build persistent responsive 3D world and loading sequence
-- [ ] Build navigation, cursor, sound-ready controls, and semantic story sections
-- [ ] Add scroll choreography and interactive object lab
-- [ ] Add generated project imagery and editorial portfolio
-- [ ] Add SEO support files and verify desktop/mobile/reduced-motion behavior
+- [x] Dark cinematic visual system (colors, type, glass, glow)
+- [x] Hero with particle backdrop + signature intelligence core
+- [x] Premium floating navbar, mobile menu, custom cursor
+- [x] Editorial about, interactive skills + ecosystem map
+- [x] Timeline experience/education, cinematic project cards, certifications
+- [x] Contact/footer finale, responsive + reduced-motion, console clean
