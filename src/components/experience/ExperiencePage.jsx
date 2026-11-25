@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowUpRight, Github, Linkedin, Menu, X } from "lucide-react";
 import { certifications, experience, projectCategories, projects, skillGroups } from "../../data/content";
+import portfolioBanner from "../../assets/portfolio-banner.mp4.asset.json";
+import portfolioBannerPoster from "../../assets/portfolio-banner-poster.jpg.asset.json";
 import CustomCursor from "./CustomCursor.jsx";
 import HeroBackdrop from "./HeroBackdrop.jsx";
-import SignatureCore from "./SignatureCore.jsx";
 import TechEcosystem from "./TechEcosystem.jsx";
 
 const navItems = [
@@ -159,6 +160,19 @@ export default function ExperiencePage() {
       <main id="top">
         <section className="portfolio-hero">
           <HeroBackdrop />
+          <video
+            className="portfolio-hero-video"
+            aria-hidden="true"
+            autoPlay={!reduced}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={portfolioBannerPoster.url}
+          >
+            <source src={portfolioBanner.url} type="video/mp4" />
+          </video>
+          <div className="portfolio-hero-video-overlay" aria-hidden="true" />
           <div className="portfolio-container hero-content">
             <div className="hero-left">
               <motion.p className="portfolio-label status-label" {...fade(0.05)}>
@@ -182,9 +196,6 @@ export default function ExperiencePage() {
                 <a href="https://linkedin.com/in/farooq-azam-121342274" target="_blank" rel="noreferrer" data-cursor="VIEW"><Linkedin size={15} /> LinkedIn</a>
               </motion.div>
             </div>
-            <motion.div className="hero-visual" initial={{ opacity: 0, scale: 0.92 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.5, duration: 1.6, ease: [0.16, 1, 0.3, 1] }}>
-              <SignatureCore />
-            </motion.div>
           </div>
           <motion.div className="hero-meta" {...fade(1.35)}>
             <span>Karachi, Pakistan</span>

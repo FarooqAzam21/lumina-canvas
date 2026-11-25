@@ -6,3 +6,4 @@
 - [x] Editorial about, interactive skills + ecosystem map
 - [x] Timeline experience/education, cinematic project cards, certifications
 - [x] Contact/footer finale, responsive + reduced-motion, console clean
+- [x] Add the supplied video to the main portfolio banner with a poster and reduced-motion fallback
